@@ -43,23 +43,23 @@ affordable web designers, Ben Watts">
 
 <div class="row">
  <div class="col">
-  <span style="font-size:40px; font-weight:bold; cursor:pointer; color:black" onclick="openNav()">&#9776; MENU</span>
+  <span style="font-size:40px;  cursor:pointer;" onclick="openNav()">&#9776; menu</span>
  </div>
 </div>
 
 <div class="row">
  <div class="col">
   <div class="logo" align="center">
-  <img class="img-fluid" src="images/logo.png" alt="logo">
+  <img class="img-fluid" src="images/title.png" alt="logo">
   </div>
  </div>
 </div>
 
 <br>
 
-<div class="row">
- <div class="col">
-  <p>
+<div class="row" align="center">
+<div class="col">
+<p>
   Hello and welcome to my page!
   My name is Ben Watts. I'm a web designer based in a small market town in North Shropshire called Oswestry (O-Town).<br> 
   If you are interested in having a website built to advertise your business, 
@@ -67,12 +67,18 @@ affordable web designers, Ben Watts">
   Please feel free to browse my page, take a look at my projects and contact me if you have any further inquiries.<br><br> 
   Cheers!
   Ben
-  </p>
- </div>
+</p>
 </div>
+ </div>
+
 
 <footer>
- <div class=footer>
+ <div class=footer align="center">
+     
+     <img class="link" src="images/facebookicon.png" alt="pages by ben facebook link" onclick="facebookWindow()" style="width: 30px"><a onclick="facebookWindow()" class="link" style="text-decoration: none; color: black"> facebook.com/pagesbyben</a>
+     <br>
+     <a href="mailto: pagesbyben@protonmail.com"><img src="images/emailicon.png" alt="pages by ben email" style="width: 30px"></a> <a href="mailto: pagesbyben@protonmail.com" style="text-decoration: none; color: black">pagesbyben@protonmail.com</a>
+     <br>
      Author: Pages by Ben 
     </div>     
 </footer>
@@ -93,6 +99,10 @@ document.getElementById("myNav").style.width = "100%";
 
 function closeNav() {
 document.getElementById("myNav").style.width = "0%";
+}
+     
+function facebookWindow() {
+    window.open("https://www.facebook.com/pagesbyben");
 }
 </script>
 </body>
