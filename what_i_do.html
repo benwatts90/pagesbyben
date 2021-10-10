@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+<html>
 <head>
 
 <!-- Meta tags -->
@@ -21,7 +22,7 @@ affordable web designers, Ben Watts">
 
 </head>
 
-<body class="container-fluid">
+<body class= "container-fluid">
 
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -34,7 +35,7 @@ affordable web designers, Ben Watts">
 
 <div class="row">
  <div class="col">
-  <span style="font-size:40px; font-weight:bold; cursor:pointer; color:black" onclick="openNav()">&#9776; MENU</span>
+  <span style="font-size:40px; cursor:pointer;" onclick="openNav()">&#9776; menu</span>
  </div>
 </div>
 
@@ -42,7 +43,7 @@ affordable web designers, Ben Watts">
 <div class="row">
  <div class="col">
   <div class="logo" align="center">
-  <img class="img-fluid" src="images/logo.png" alt="logo">
+  <img class="img-fluid" src="images/title.png" alt="logo">
   </div>
  </div>
 </div>
@@ -52,16 +53,38 @@ affordable web designers, Ben Watts">
 <div class="row">
  <div class="col">
   <p>
-  I make custom built websites using HTML, CSS and Javascript frameworks. <br>
+  I develop websites using HTML, CSS and Javascript frameworks. As well as using other tools for graphic design, databases and content management<br>
   This might not mean alot to you, but that's ok! <br>
   It just means that I can make websites that look how you want them to look and do what you want them to do. <br>
-  If you want your site to look good and function across different browsers and devices, that's no problem either. 
+  Your page will look good and function across different browsers and devices.
+    <br><br>
+      If you would like to have a site made that you can update yourself, then that is fine too. Using the content management system, Wordpress, you can make alterations to the content of your website, or add images or new pages, without having to consult myself. However, I will be on hand to offer guidance, or fix any problems that you may encounter. 
+      <br><br>
+      Below is a list of some of the languages, frameworks and other tools that I use to develop web pages.
+      <br><br>
+      HTML<br>
+      CSS<br>
+      Javascript<br>
+      PHP<br>
+      MySQL<br>
+      Bootstrap<br>
+      Python<br>
+      Wordpress<br>
+      GIMP<br>
+      React
+      
+      
   </p>
  </div>
 </div>
     
 <footer>
- <div class=footer>
+ <div class=footer align="center">
+     
+     <img class="link" src="images/facebookicon.png" alt="pages by ben facebook link" onclick="facebookWindow()" style="width: 30px"><a onclick="facebookWindow()" class="link" style="text-decoration: none; color: black"> facebook.com/pagesbyben</a>
+     <br>
+     <a href="mailto: pagesbyben@protonmail.com"><img src="images/emailicon.png" alt="pages by ben email" style="width: 30px"></a> <a href="mailto: pagesbyben@protonmail.com" style="text-decoration: none; color: black">pagesbyben@protonmail.com</a>
+     <br>
      Author: Pages by Ben 
     </div>     
 </footer>
@@ -84,6 +107,9 @@ function closeNav() {
 document.getElementById("myNav").style.width = "0%";
 }
 
+function facebookWindow() {
+window.open("https://www.facebook.com/pagesbyben");
+}
 </script>
 </body>
 </html>
