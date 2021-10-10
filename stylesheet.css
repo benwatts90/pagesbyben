@@ -1,28 +1,38 @@
 body {
-background-image: url("images/wallpaper.png");
+background-size: 700px;
+background-image: url("images/deer-double-exposure-logo-nobg.png");
+background-color: gainsboro;
 background-repeat: no-repeat;
 background-attachment: fixed;
-background-size: cover;
-font-family: verdana, arial, sans-serif;
+background-position: center;
+font-family: century gothic medium, sans-serif;
 }
 
 .container-fluid {
     max-height: 100%;
+    background-color: gainsboro;
 }
 
 .logo {
 display: none;
 margin-top: 30px;
+margin-bottom: 30px;
 }
 
 p {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 display: none;
-background: rgba(255, 255, 255, 0.5);
+background: rgba(86, 142, 143, 0.8);
 color: black;
 font-size: 22px;
 font-weight: bold;
-padding: 15px;
+padding: 40px;
 text-align: center;
+font-family: century gothic medium, sans-serif;
+}
+
+.link:hover {
+    cursor: pointer;
 }
 
 .overlay {
@@ -75,9 +85,19 @@ text-align: center;
   }
 }
 
+#logos {
+    width: 500px;
+    cursor: pointer;
+}
+
+
 .footer{
+    margin-top: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: rgba(86, 142, 143, 0.8);
     color: black;
     font-size: 22px;
     font-weight: bold;
+    font-family: century gothic medium, sans-serif;
     padding: 15px;
 }
