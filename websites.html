@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Meta tags -->
+<meta charset= "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name= "description" content="Pages by Ben websites page">
+<meta name= "keywords" content="Pages by Ben, web page design, website design,
+web design, web development, web design shropshire, web design uk, web designers, web design and development, website development, web dev, shropshire web development, web development uk,
+web designer, Ben Watts web design">
+<meta name= "author" content="Pages by Ben">
+    
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<title>Websites</title>
+
+</head>
+
+<body id="body">
+<div id="menu-modal">
+    <span id="close-menu" onclick="closeMenu()">x</span>
+    <a href="websites.html" class="menu-link" id="menu-websites" onclick="websitesHighlight()" style="color: darkslategrey; text-decoration: none" align="center">Websites</a><br>
+    <a href="graphic-design.html" class="menu-link" id="menu-graphics" onclick="graphicsHighlight()" style="color: darkslategrey; text-decoration: none" align="center">Graphic Design</a><br>
+    <a href="about.html" class="menu-link" id="menu-about" onclick="aboutHighlight()" style="color: darkslategrey; text-decoration: none" align="center">About</a><br>
+    <a href="contact.html" class="menu-link" id="menu-contact" onclick="contactHighlight()" style="color: darkslategrey; text-decoration: none" align="center">Contact</a>
+</div>
+<div id="header">
+    <div id="header-animation">
+        
+        <img src="images/menu-icon.png" id="menu" onclick="openMenu()">
+            <img src="images/stag.png" id="stag" style="opacity: 1;"> 
+        
+                <div id="heading">Pages by Ben</div>
+                    <div id="sub-heading">Web Design and Development</div>
+        
+<div id="nav-links">
+    <div id="nav-link" align="center" onmouseenter="websitesUnderlineAnimation()" onmouseout="websitesUnderlineOffHover()"><a href="websites.html" style="text-decoration-line: none">Websites</a><br>
+    <div id="websites-link-underline"></div>
+    </div>
+        <div id="nav-link" align="center" onmouseenter="graphicsUnderlineAnimation()" onmouseout="graphicsUnderlineOffHover()"><a href="graphic-design.html" style="text-decoration-line: none">Graphic Design</a><br><div id="graphics-link-underline"></div>
+        </div>
+            <div id="nav-link" align="center" onmouseenter="aboutUnderlineAnimation()" onmouseout="aboutUnderlineOffHover()"><a href="about.html" style="text-decoration-line: none">About</a><br>
+            <div id="about-link-underline"></div>
+            </div>
+                <div id="nav-link" align="center" onmouseenter="contactUnderlineAnimation()" onmouseout="contactUnderlineOffHover()"><a href="contact.html" style="text-decoration-line: none">Contact</a><br>
+                <div id="contact-link-underline"></div>
+                </div>
+ </div>
+</div>
+</div>
+    
+<div class="container reveal" id="content-container">
+        <p id="content">
+            Please scroll down and click on the links below to visit some of the websites that I have built. 
+        </p>
+</div>
+    
+<div id="website-links-container">
+    <div class="website-link-container">
+        <div class="container reveal" id="sara-abbott-link-and-blurb" onmouseover="displayTextOne()" onmouseout="hideTextOne()" onclick="openSaraAbbott()">
+            <p class="website-link-blurb" id="saras-site-blurb">A website for Sara Abbott, an artist specializing in animal portraiture.
+            </p>
+            <img id="sara-link-img" src="images/kissing-cows-oil-acrylic-on-canvas-100-x100cm-SOLD-1.jpg" class="website-link-images" id="sara-abbott-website-link-img" alt="kissing-cows" description="image-for-Sara-Abbott">
+        </div>   
+    </div>
+    <div class="website-link-container">
+        <div class="container revealTwo" id="dolydd-gobaith-link-and-blurb" onmouseover="displayTextTwo()" onmouseout="hideTextTwo()" onclick="openDolyddGobaith()">
+            <p class="website-link-blurb" id="dolydd-gobaith-link-blurb">Dolydd-Gobaith translates from Welsh to "Meadows of Hope". It is a regenerative agriculture CIC based in Powys, Wales.
+            </p>
+            <img id="dolydd-link-img" src="images/Graphics/Logos/dolydd-gobaith/logo1-nobg.png" class="website-link-images" id="dolydd-gobaith-website-link-img" alt="dolydd-gobaith-logo" description="dolydd-gobaith-logo-designed-by-pages-by-Ben">
+        </div>
+    </div>
+</div>
+    
+<footer>
+    <div id="footer-content">
+        <a href="mailto: pagesbyben@protonmail.com" style="text-decoration: none">pagesbyben@protonmail.com</a>
+            <p>Author: Pages by Ben</p>
+    </div>
+</footer>
+
+<script>
+    
+function websitesUnderlineAnimation() {
+  let id = null;
+  const elem = document.getElementById("websites-link-underline");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 0.5);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos ++; 
+      elem.style.width = pos + "%";  
+    }
+  }
+}
+    
+function websitesUnderlineOffHover() {
+    document.getElementById("websites-link-underline").style.width = "0%";
+}
+    
+function graphicsUnderlineAnimation() {
+  let id = null;
+  const elem = document.getElementById("graphics-link-underline");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 0.5);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos ++; 
+      elem.style.width = pos + "%";  
+    }
+  }
+}
+    
+function graphicsUnderlineOffHover() {
+    document.getElementById("graphics-link-underline").style.width = "0%";
+}
+    
+function aboutUnderlineAnimation() {
+  let id = null;
+  const elem = document.getElementById("about-link-underline");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 0.1);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos ++; 
+      elem.style.width = pos + "%";  
+    }
+  }
+}
+    
+function aboutUnderlineOffHover() {
+    document.getElementById("about-link-underline").style.width = "0%";
+}
+    
+function contactUnderlineAnimation() {
+  let id = null;
+  const elem = document.getElementById("contact-link-underline");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 1);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos ++; 
+      elem.style.width = pos + "%";  
+    }
+  }
+}
+    
+function contactUnderlineOffHover() {
+    document.getElementById("contact-link-underline").style.width = "0%";
+}
+
+const contentAnimationStart = setTimeout(reveal, 500);
+window.addEventListener('onload', reveal);
+    
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    
+    for(var i = 0; i < reveals.length; i++){
+        
+        var windowHeight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 10;
+        
+        if(revealtop < windowHeight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+window.addEventListener('scroll', revealTwo);
+function revealTwo(){
+    var reveals = document.querySelectorAll('.revealTwo');
+    
+    for(var i = 0; i < reveals.length; i++){
+        
+        var windowHeight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 100;
+        
+        if(revealtop < windowHeight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+window.addEventListener('scroll', reveal);
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    
+    for(var i = 0; i < reveals.length; i++){
+        
+        var windowHeight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 100;
+        
+        if(revealtop < windowHeight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+function displayTextOne() {
+    document.getElementById("saras-site-blurb").style.opacity = 1;
+    document.getElementById("sara-link-img").style.opacity = 0.6;
+}
+    
+function hideTextOne() {
+    document.getElementById("saras-site-blurb").style.opacity = 0;
+    document.getElementById("sara-link-img").style.opacity = 1;
+}
+    
+function displayTextTwo() {
+    document.getElementById("dolydd-gobaith-link-blurb").style.opacity = 1;
+    document.getElementById("dolydd-link-img").style.opacity = 0.6;
+}
+    
+function hideTextTwo() {
+    document.getElementById("dolydd-gobaith-link-blurb").style.opacity = 0;
+    document.getElementById("dolydd-link-img").style.opacity = 1;
+}
+    
+function showHeader() {
+    document.getElementById("stag").style.transition = 0;
+    document.getElementById("sub-heading").style.transition = 0;
+    document.getElementById("heading").style.transition = 0;
+    document.getElementById("nav-links").style.transition = 0;
+    document.getElementById("stag").style.opacity = 1;
+    document.getElementById("sub-heading").style.opacity = 1;
+    document.getElementById("heading").style.opacity = 1;
+    document.getElementById("nav-links").style.opacity = 1;
+}
+showHeader();
+
+function openSaraAbbott() {
+    window.open("https://www.sara-abbott.com");
+}
+    
+function openDolyddGobaith() {
+    window.open("https://dolydd-gobaith.cymru");
+}
+
+function openMenu() {
+    document.getElementById("menu-modal").style.width = "60%";
+    document.getElementById("body").style.overflow = "hidden";
+        const showMenuLinks = setTimeout(showMenu, 1000);
+            function showMenu() {
+                document.getElementById("menu-websites").style.opacity = 1;
+                document.getElementById("menu-graphics").style.opacity = 1;
+                document.getElementById("menu-about").style.opacity = 1;
+                document.getElementById("menu-contact").style.opacity = 1;
+                document.getElementById("close-menu").style.opacity = 1;
+            }
+}
+    
+function websitesHighlight() {
+    document.getElementById("menu-websites").style.backgroundColor = "#ff3700";
+}
+function graphicsHighlight() {
+    document.getElementById("menu-graphics").style.backgroundColor = "#ff3700";
+}
+function aboutHighlight() {
+    document.getElementById("menu-about").style.backgroundColor = "#ff3700";
+}
+function contactHighlight() {
+    document.getElementById("menu-contact").style.backgroundColor = "#ff3700";
+}
+
+function closeMenu() {
+    document.getElementById("menu-modal").style.width = "0%";
+    document.getElementById("menu-websites").style.opacity = 0;
+    document.getElementById("menu-graphics").style.opacity = 0;
+    document.getElementById("menu-about").style.opacity = 0;
+    document.getElementById("menu-contact").style.opacity = 0;
+    document.getElementById("close-menu").style.opacity = 0;
+    document.getElementById("body").style.overflow = "scroll";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+body {
+    background-image: url(images/kiwihug-zGZYQQVmXw0-unsplash.jpg);
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+a {
+    color: #ff5c31;
+}
+
+#modal1, #modal2, #modal3 {
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    width: 0%;
+    height: 100%;
+    top: 0px;
+    background-color:rgba(0,0,0,0.8);
+    transition: 1s;
+    justify-content: center;
+}
+
+#posters-modal-content, #dolydd-gobaith-modal-content {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    justify-content: center;
+    overflow: auto;
+    transition: 0s;
+}
+
+#logos-modal-content {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#logos-column-2, #logos-column-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-img {
+    width: 500px;
+    margin: 20px;
+}
+
+
+ #logos-modal-img-2, #logos-modal-img-3, logos-modal-img-4, #logos-modal-img-5 {
+    object-fit: contain;
+    width: 500px;
+    height: auto;
+}
+
+#logos-modal-img-1,#logos-modal-img-6 {
+    width: 800px;
+    height: auto;
+}
+
+#logos-modal-img-8 {
+    width: 320px;
+    height: 550px;
+    margin-top: 100px;
+}
+
+#logos-modal-img-7 {
+    width: 970px;
+    height: 700px;
+    object-fit: contain;
+}
+
+.dolydd-gobaith-modal-img {
+    width: 500px;
+    height: auto;
+    margin: 20px;
+    object-fit: contain;
+}
+
+.close-modal {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: monospace;
+}
+
+.close-modal:hover {
+    cursor: pointer;
+}
+
+#websites-link-underline, #graphics-link-underline, #about-link-underline, #contact-link-underline {
+    width: 0px;
+    height: 3px;
+    background-color: #ff5c31;
+    margin-top: 2px;
+}
+
+#menu {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+    visibility: hidden;
+    z-index: 0;
+}
+
+#menu:hover {
+    cursor: pointer;
+}
+
+#menu-modal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ff5c31;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4); 
+    font-family: century gothic;
+    font-weight: bold;
+    color: darkslategray;
+    font-size: 24px;
+    z-index: 1;
+    position: absolute;
+    transition: 1s;
+}
+
+#menu-websites, #menu-graphics, #menu-about, #menu-contact {
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom:60px;
+    height: 40px;
+    opacity: 0;
+}
+
+#close-menu {
+    margin-left: 15px;
+    opacity: 0;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+#close-menu:hover {
+    cursor: pointer;
+}
+
+#stag {
+    width: 200px;
+    height: 214px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: 1s;
+}
+
+#heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    opacity: 0;
+    transition: 2s;
+}
+
+#sub-heading {
+    justify-content: center;
+    font-size: 30px;
+    opacity: 0;
+    transition: 3s;
+}
+
+#nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 22px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: 4s;
+}
+
+#nav-link {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#header-animation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: century gothic;
+    font-weight: bold;
+    color: #ff5c31;
+    text-decoration: none;
+    background-color: darkslategrey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    margin-bottom: 50px;
+}
+
+#content-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 3px solid #ff5c31;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+#content {   
+    color: darkslategray;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    font-family: courier new;
+}
+
+#portfolio-links-container, #website-links-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#portfolio-link-container, .website-link-container {
+    width: 400px;
+    height: 400px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#portfolio-link-container:hover, .website-link-container:hover {
+    cursor: pointer;
+}
+
+
+#posters-link-container, #logos-link-container, #dolydd-gobaith-graphics-link-container, #sara-abbott-link-and-blurb, #dolydd-gobaith-link-and-blurb {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.graphics-link-img, .website-link-images {
+    position: relative;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: 0.5s;
+}
+
+.graphics-link-img:hover, .website-link-images:hover {
+    width: 410px;
+}
+
+.graphics-link-title, .website-link-blurb {
+    position: absolute;
+    z-index: 1;
+    font-family: monospace;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#posters-link-title {
+    opacity: 0;
+    transition: 1s;
+    font-size: 40px;
+}
+
+#logos-link-title {
+    opacity: 0;
+    transition: 1s;
+    font-size: 40px;
+}
+
+#dolydd-gobaith-graphics-link-title {
+    opacity: 0;
+    transition: 1s;
+    font-size: 40px;
+}
+
+#saras-site-blurb {
+    opacity: 0;
+    transition: 1s;
+    font-size: 24px;
+}
+
+#dolydd-gobaith-link-blurb {
+    opacity: 0;
+    transition: 1s;
+    font-size: 24px;
+}
+
+
+#graphics-grid {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: darkslategrey;
+    color: #ff5c31;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: century gothic;
+    font-size: 22px;
+    padding: 50px;
+}
+
+#footer-content {
+    width: 30%;
+}
+
+#email-icon {
+}
+
+#work_container_1 {
+    position: absolute;
+    background-color: #ffffe6;
+}
+
+.reveal, .revealOne, .revealTwo, .revealThree {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.revealTwo.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.revealThree.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+    
+@media (max-width: 800px) {
+    #stag {
+        margin-top: 50px
+    }
+    #heading {
+        font-size: 70px;
+    }
+    #sub-heading {
+        margin-bottom: -50px
+    }
+    #menu {
+        visibility: visible;
+    }
+    #nav-links {
+        visibility: hidden;
+        transition: 0s;
+    }
+    #content {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .reveal, .revealOne, .revealTwo, .revealThree {
+        transform: translateY(50px);
+    }
+    
+    #posters-link-title {
+        opacity: 1;
+    }
+
+    #logos-link-title {
+        opacity: 1;
+    }
+
+    #dolydd-gobaith-graphics-link-title {
+        opacity: 1;
+    }
+
+    #saras-site-blurb {
+        opacity: 1;
+    }
+
+    #dolydd-gobaith-link-blurb {
+        opacity: 1;
+    }
+    
+    .graphics-link-img, .website-link-images {
+        opacity: 0.4
+    }
+    .modal-img {
+        width: 90%;
+    }
+    
+    #posters-modal-img-1 {
+    margin-top: 80px;
+    }
+     #logos-modal-img-2, #logos-modal-img-3, #logos-modal-img-4, #logos-modal-img-5, #logos-modal-img-6, #dolydd-gobaith-modal-img-1, #dolydd-gobaith-modal-img-2, #dolydd-gobaith-modal-img-3, #dolydd-gobaith-modal-img-4 {
+        width: 90%;
+    }
+    
+    #logos-modal-img-1 {
+        width: 90%;
+        height: 450px;
+        margin-top: 80px;
+    }
+    
+    #logos-modal-img-7 {
+        width: 90%;
+        height: auto;
+    }
+    
+    #logos-modal-img-8 {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+    
+    #dolydd-gobaith-modal-img-1 {
+        margin-top: 80px;
+    }

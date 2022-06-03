@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Pages by Ben</title>
+
+<!-- Meta tags -->
+<meta charset= "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name= "description" content="Pages by Ben landing page">
+<meta name= "keywords" content="Pages by Ben, web page design, website design,
+web design, web development, web design shropshire, web design uk, web designers, web design and development, website development, web dev, shropshire web development, web development uk,
+web designer, Ben Watts web design">
+<meta name= "author" content="Pages by Ben">
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+
+<body id="body">
+<div id="menu-modal">
+    <span id="close-menu" onclick="closeMenu()">x</span>
+    <a href="websites.html" class="menu-link" id="menu-websites" onclick="websitesHighlight()" style="color: darkslategrey; text-decoration: none" align="center">Websites</a><br>
+    <a href="graphic-design.html" class="menu-link" id="menu-graphics" onclick="graphicsHighlight()" style="color: darkslategrey; text-decoration: none" align="center">Graphic Design</a><br>
+    <a href="about.html" class="menu-link" id="menu-about" onclick="aboutHighlight()" style="color: darkslategrey; text-decoration: none" align="center">About</a><br>
+    <a href="contact.html" class="menu-link" id="menu-contact" onclick="contactHighlight()" style="color: darkslategrey; text-decoration: none" align="center">Contact</a>
+</div>
+    
+<div id="header">
+    <div class="container" id="header-animation">
+        <img src="images/stag.png" id="stag">
+            <img src="images/menu-icon.png" id="menu" onclick="openMenu()">
+                <div id="heading">Pages by Ben</div>
+                    <div id="sub-heading">Web Design and Development</div>
+        
+<div id="nav-links">
+    <div id="nav-link" align="center" onmouseenter="websitesUnderlineAnimation()" onmouseout="websitesUnderlineOffHover()"><a href="websites.html" style="text-decoration-line: none">Websites</a><br>
+    <div id="websites-link-underline"></div>
+    </div>
+        <div id="nav-link" align="center" onmouseenter="graphicsUnderlineAnimation()" onmouseout="graphicsUnderlineOffHover()"><a href="graphic-design.html" style="text-decoration-line: none">Graphic Design</a><br><div id="graphics-link-underline"></div>
+        </div>
+            <div id="nav-link" align="center" onmouseenter="aboutUnderlineAnimation()" onmouseout="aboutUnderlineOffHover()"><a href="about.html" style="text-decoration-line: none">About</a><br>
+            <div id="about-link-underline"></div>
+            </div>
+                <div id="nav-link" align="center" onmouseenter="contactUnderlineAnimation()" onmouseout="contactUnderlineOffHover()"><a href="contact.html" style="text-decoration-line: none">Contact</a><br>
+                <div id="contact-link-underline"></div>
+                </div>
+ </div>
+</div>
+</div>
+
+<div class="container reveal" id="content-container">
+        <p id="content">
+          Hello and welcome to my page!
+          My name is Ben Watts. I'm a web designer based in a small market town in North Shropshire called Oswestry (O-Town).<br> 
+          If you are interested in having a website built to advertise your business, 
+          would like a personal page/blog, or you're pursuing any venture that requires a web page, then you're in the right place!<br>
+          Please feel free to browse my page, take a look at my projects and contact me if you have any further inquiries.<br><br> 
+          Cheers!
+          Ben
+        </p>
+</div>
+
+<footer>
+    <div id="footer-content">
+        <a href="mailto: pagesbyben@protonmail.com" style="text-decoration: none">pagesbyben@protonmail.com</a>
+            <p>Author: Pages by Ben</p>
+    </div>
+</footer>
+
+<script>
+function headerAnimation() {
+  let id = null;
+  const elem = document.getElementById("header-animation");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 6);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos ++; 
+      elem.style.height = pos + "%";  
+    }
+  }
+}
+     
+headerAnimation();
+    
+function websitesUnderlineAnimation() {
+  let id = null;
+  const elem = document.getElementById("websites-link-underline");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 0.5);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos ++; 
+      elem.style.width = pos + "%";  
+    }
+  }
+}
+    
+function websitesUnderlineOffHover() {
+    document.getElementById("websites-link-underline").style.width = "0%";
+}
+    
+function graphicsUnderlineAnimation() {
+  let id = null;
+  const elem = document.getElementById("graphics-link-underline");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 0.5);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos ++; 
+      elem.style.width = pos + "%";  
+    }
+  }
+}
+    
+function graphicsUnderlineOffHover() {
+    document.getElementById("graphics-link-underline").style.width = "0%";
+}
+    
+function aboutUnderlineAnimation() {
+  let id = null;
+  const elem = document.getElementById("about-link-underline");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 0.5);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos ++; 
+      elem.style.width = pos + "%";  
+    }
+  }
+}
+    
+function aboutUnderlineOffHover() {
+    document.getElementById("about-link-underline").style.width = "0%";
+}
+    
+function contactUnderlineAnimation() {
+  let id = null;
+  const elem = document.getElementById("contact-link-underline");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 0.5);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos ++; 
+      elem.style.width = pos + "%";  
+    }
+  }
+}
+    
+function contactUnderlineOffHover() {
+    document.getElementById("contact-link-underline").style.width = "0%";
+}
+    
+const contentAnimationStart = setTimeout(reveal, 1500);
+    
+window.addEventListener('onload', reveal);
+    
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    
+    for(var i = 0; i < reveals.length; i++){
+        
+        var windowHeight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 100;
+        
+        if(revealtop < windowHeight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+    
+const headerAnimationStart = setTimeout(showHeader, 600);
+window.addEventListener('onload', showHeader);
+    
+function showHeader() {
+    document.getElementById("stag").style.opacity = 1;
+    document.getElementById("heading").style.opacity = 1;
+    document.getElementById("sub-heading").style.opacity = 1;
+    document.getElementById("nav-links").style.opacity = 1;
+}
+    
+function openMenu() {
+    document.getElementById("menu-modal").style.width = "60%";
+    document.getElementById("body").style.overflow = "hidden";
+        const showMenuLinks = setTimeout(showMenu, 1000);
+            function showMenu() {
+                document.getElementById("menu-websites").style.opacity = 1;
+                document.getElementById("menu-graphics").style.opacity = 1;
+                document.getElementById("menu-about").style.opacity = 1;
+                document.getElementById("menu-contact").style.opacity = 1;
+                document.getElementById("close-menu").style.opacity = 1;
+            }
+}
+    
+function websitesHighlight() {
+    document.getElementById("menu-websites").style.backgroundColor = "#ff3700";
+}
+function graphicsHighlight() {
+    document.getElementById("menu-graphics").style.backgroundColor = "#ff3700";
+}
+function aboutHighlight() {
+    document.getElementById("menu-about").style.backgroundColor = "#ff3700";
+}
+function contactHighlight() {
+    document.getElementById("menu-contact").style.backgroundColor = "#ff3700";
+}
+
+function closeMenu() {
+    document.getElementById("menu-modal").style.width = "0%";
+    document.getElementById("menu-websites").style.opacity = 0;
+    document.getElementById("menu-graphics").style.opacity = 0;
+    document.getElementById("menu-about").style.opacity = 0;
+    document.getElementById("menu-contact").style.opacity = 0;
+    document.getElementById("close-menu").style.opacity = 0;
+    document.getElementById("body").style.overflow = "scroll";
+}
+
+</script>
+</body>
+</html>

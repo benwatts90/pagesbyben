@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Meta tags -->
+<meta charset= "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name= "description" content="Pages by Ben graphic design page">
+<meta name= "keywords" content="Pages by Ben, web page design, website design,
+web design, web development, web design shropshire, web design uk, web designers, web design and development, website development, web dev, shropshire web development, web development uk,
+web designer, Ben Watts web design">
+<meta name= "author" content="Pages by Ben">
+    
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<title>Graphic Design</title>
+
+</head>
+
+<body id="body">
+<div id="menu-modal">
+    <span id="close-menu" onclick="closeMenu()">x</span>
+    <a href="websites.html" class="menu-link" id="menu-websites" onclick="websitesHighlight()" style="color: darkslategrey; text-decoration: none" align="center">Websites</a><br>
+    <a href="graphic-design.html" class="menu-link" id="menu-graphics" onclick="graphicsHighlight()" style="color: darkslategrey; text-decoration: none" align="center">Graphic Design</a><br>
+    <a href="about.html" class="menu-link" id="menu-about" onclick="aboutHighlight()" style="color: darkslategrey; text-decoration: none" align="center">About</a><br>
+    <a href="contact.html" class="menu-link" id="menu-contact" onclick="contactHighlight()" style="color: darkslategrey; text-decoration: none" align="center">Contact</a>
+</div>
+    
+<div class="modal" id="modal1">
+    <div id="posters-modal-content">
+        <span class="close-modal" onclick="closeModal1()">x</span>
+        <img class="modal-img" id="posters-modal-img-1" src="images/Graphics/gardening-flyer.png" alt="gardening-flyer-image">
+        <img class="modal-img" src="images/Graphics/capoeira-flyer.png" alt="capoeira-flyer-image">
+        <img class="modal-img" src="images/Graphics/taste-of-mexico.png" alt="taste-of-mexico-flyer-image">
+        <img class="modal-img" src="images/Graphics/taco_time.jpg" alt="taco-time-poster-image">
+    </div>
+</div>
+<div class="modal" id="modal2">
+    <div id="logos-modal-content">
+        <span class="close-modal" onclick="closeModal2()">x</span>
+        <img class="modal-img" id="logos-modal-img-1" src="images/Graphics/Logos/elephant.png" alt="elephant-logo">
+        <div id="logos-column-2">
+            <img class="modal-img" id="logos-modal-img-2" src="images/Graphics/Logos/deer-logo-greybg.png" alt="deer-logo">
+            <img class="modal-img" id="logos-modal-img-4" src="images/Graphics/Logos/dolydd-gobaith/logo1-whitebg.png" alt="dolydd-gobaith-logo">
+        </div>
+        <div id="logos-column-3">
+            <img class="modal-img" id="logos-modal-img-5"src="images/Graphics/Logos/little-boxes.png" alt="guitar-drawing-logo">
+            <img class="modal-img" id="logos-modal-img-3" src="images/Graphics/Logos/red-deer-logo.png" alt="red-deer-logo">
+        </div>
+        <img class="modal-img" id="logos-modal-img-6"src="images/Graphics/Logos/guitar-drawing.png" alt="guitar-drawing-logo">
+        <img class="modal-img" id="logos-modal-img-7"src="images/Graphics/Logos/three-cheers.jpg" alt="guitar-drawing-logo">
+        <img class="modal-img" id="logos-modal-img-8" src="images/Graphics/Logos/brian-gerrish.png" alt="brian-gerrish-logo">
+        
+    </div>
+</div>
+<div class="modal" id="modal3">
+    <div id="dolydd-gobaith-modal-content">
+        <span class="close-modal" onclick="closeModal3()">x</span>
+        <img class="dolydd-gobaith-modal-img" id="dolydd-gobaith-modal-img-1" src="images/Graphics/Logos/dolydd-gobaith/Butterfly%20on%20flower.png" alt="butterfly-flower-logo">
+        <img class="dolydd-gobaith-modal-img" id="dolydd-gobaith-modal-img-2"src="images/Graphics/Logos/dolydd-gobaith/flower-logo.png" alt="flower-logo">
+        <img class="dolydd-gobaith-modal-img" id="dolydd-gobaith-modal-img-4" src="images/Graphics/Logos/dolydd-gobaith/logo1-whitebg.png" alt="dolydd-gobaith-logo">
+        <img class="dolydd-gobaith-modal-img" id="dolydd-gobaith-modal-img-3" src="images/Graphics/Logos/dolydd-gobaith/butterfly-logo-whitebg.png" alt="butterfly-logo">
+    </div>
+</div>
+    
+<div id="header">
+<div id="header-animation">
+    
+<img src="images/menu-icon.png" id="menu" onclick="openMenu()">   
+    <img src="images/stag.png" id="stag" style="opacity: 1;">    
+        <div id="heading">Pages by Ben</div>
+            <div class="row" id="sub-heading">Web Design and Development</div>
+        
+<div id="nav-links">
+    <div id="nav-link" align="center" onmouseenter="websitesUnderlineAnimation()" onmouseout="websitesUnderlineOffHover()"><a href="websites.html" style="text-decoration-line: none">Websites</a><br>
+    <div id="websites-link-underline"></div>
+    </div>
+        <div id="nav-link" align="center" onmouseenter="graphicsUnderlineAnimation()" onmouseout="graphicsUnderlineOffHover()"><a href="graphic-design.html" style="text-decoration-line: none">Graphic Design</a><br><div id="graphics-link-underline"></div>
+        </div>
+            <div id="nav-link" align="center" onmouseenter="aboutUnderlineAnimation()" onmouseout="aboutUnderlineOffHover()"><a href="about.html" style="text-decoration-line: none">About</a><br>
+            <div id="about-link-underline"></div>
+            </div>
+                <div id="nav-link" align="center" onmouseenter="contactUnderlineAnimation()" onmouseout="contactUnderlineOffHover()"><a href="contact.html" style="text-decoration-line: none">Contact</a><br>
+                <div id="contact-link-underline"></div>
+                </div>
+ </div>
+</div>
+</div>
+    
+<div class="container reveal" id="content-container">
+    <p id="content">
+        Please scroll down and click on the images below to view some examples of my Graphic design work. 
+    </p>
+</div>
+    
+<div id="portfolio-links-container">
+    <div id="portfolio-link-container">
+        <div class="container reveal" id="posters-link-container" onclick="openPostersModal()" onmouseover="displayTextOne()" onmouseout="hideTextOne()">
+            <p class="graphics-link-title" id="posters-link-title">Posters & Flyers
+            </p>
+            <img id="posters-img" src="images/Graphics/taco_time.jpg" class="graphics-link-img" id="posters-link-img" alt="taco-time-poster" description="blossom-and-bee-kitchen-taco-time-poster">
+        </div>   
+    </div>
+    <div id="portfolio-link-container">
+        <div class="container revealTwo" id="logos-link-container" onclick="openLogosModal()" onmouseover="displayTextTwo()" onmouseout="hideTextTwo()">
+            <p class="graphics-link-title" id="logos-link-title">Logos & Other Artwork
+            </p>
+            <img id="logos-img" src="images/Graphics/Logos/elephant.png" class="graphics-link-img" id="logos-link-img" alt="elephant-image" description="pages-by-ben-graphics-elephant">
+        </div>   
+    </div>
+    <div id="portfolio-link-container">
+        <div class="container revealThree" id="dolydd-gobaith-graphics-link-container" onclick="openDolyddModal()" onmouseover="displayTextThree()" onmouseout="hideTextThree()">
+            <p class="graphics-link-title" id="dolydd-gobaith-graphics-link-title">Dolydd Gobaith/Meadows of Hope
+            </p>
+            <img id="dolydd-img" src="images/Graphics/Logos/dolydd-gobaith/logo1-nobg.png" class="graphics-link-img" id="dolydd-gobaith-graphics-link-img" alt="dolydd-gobaith-logo" description="dolydd-gobaith-logo-nobg-pages-by-ben">
+        </div>   
+    </div>
+</div>
+
+<footer>
+    <div id="footer-content">
+        <a href="mailto: pagesbyben@protonmail.com" style="text-decoration: none">pagesbyben@protonmail.com</a>
+            <p>Author: Pages by Ben</p>
+    </div>
+</footer>
+    
+<script>
+function showHeader() {
+    document.getElementById("stag").style.transition = 0;
+    document.getElementById("sub-heading").style.transition = 0;
+    document.getElementById("heading").style.transition = 0;
+    document.getElementById("nav-links").style.transition = 0;
+    document.getElementById("stag").style.opacity = 1;
+    document.getElementById("sub-heading").style.opacity = 1;
+    document.getElementById("heading").style.opacity = 1;
+    document.getElementById("nav-links").style.opacity = 1;
+}
+showHeader();
+
+function openPostersModal() {
+    document.getElementById("modal1").style.width = "100%";
+    document.getElementById("body").style.overflow = "hidden";
+    
+    const showPostersModalImgTime = setTimeout(showPostersModalImg, 850);
+    
+    function showPostersModalImg() { 
+    document.getElementById("posters-modal-content").style.visibility = "visible";
+    }
+}
+    
+function openLogosModal() {
+    document.getElementById("modal2").style.width = "100%";
+    document.getElementById("body").style.overflow = "hidden";
+    
+    const showLogosModalImgTime = setTimeout(showLogosModalImg, 850);
+    
+    function showLogosModalImg() { 
+        document.getElementById("logos-modal-content").style.visibility = "visible";
+        document.getElementsByClassName("").style.visibility = "visible";
+    }
+}
+    
+function openDolyddModal() {
+    document.getElementById("modal3").style.width = "100%";
+    document.getElementById("body").style.overflow = "hidden";
+    
+    const showDolyddModalImgTime = setTimeout(showDolyddModalImg, 850);
+    
+    function showDolyddModalImg() { 
+        document.getElementById("dolydd-gobaith-modal-content").style.visibility = "visible";
+    }
+}
+    
+function closeModal1() {
+    document.getElementById("modal1").style.width = "0%";
+    document.getElementById("posters-modal-content").style.visibility = "hidden";
+    document.getElementById("body").style.overflow = "scroll";
+}
+    
+function closeModal2() {
+    document.getElementById("modal2").style.width = "0%";
+    document.getElementById("logos-modal-img-1").style.transition = "0s";
+    document.getElementById("logos-modal-img-2").style.transition = "0s";
+    document.getElementById("logos-modal-img-3").style.transition = "0s";
+    document.getElementById("logos-modal-img-4").style.transition = "0s";
+    document.getElementById("logos-modal-img-5").style.transition = "0s";
+    document.getElementById("logos-modal-img-6").style.transition = "0s";
+    document.getElementById("logos-modal-content").style.visibility = "hidden";
+    document.getElementById("body").style.overflow = "scroll";
+}
+
+function closeModal3() {
+    document.getElementById("modal3").style.width = "0%";
+    document.getElementById("dolydd-gobaith-modal-img-1").style.transition = "0s";
+    document.getElementById("dolydd-gobaith-modal-img-2").style.transition = "0s";
+    document.getElementById("dolydd-gobaith-modal-img-3").style.transition = "0s";
+    document.getElementById("dolydd-gobaith-modal-img-4").style.transition = "0s";
+    document.getElementById("dolydd-gobaith-modal-content").style.visibility = "hidden"; 
+    document.getElementById("body").style.overflow = "scroll";
+}
+    
+function websitesUnderlineAnimation() {
+  let id = null;
+  const elem = document.getElementById("websites-link-underline");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 0.1);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos ++; 
+      elem.style.width = pos + "%";  
+    }
+  }
+}
+    
+function websitesUnderlineOffHover() {
+    document.getElementById("websites-link-underline").style.width = "0%";
+}
+    
+function graphicsUnderlineAnimation() {
+  let id = null;
+  const elem = document.getElementById("graphics-link-underline");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 0.1);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos ++; 
+      elem.style.width = pos + "%";  
+    }
+  }
+}
+    
+function graphicsUnderlineOffHover() {
+    document.getElementById("graphics-link-underline").style.width = "0%";
+}
+    
+function aboutUnderlineAnimation() {
+  let id = null;
+  const elem = document.getElementById("about-link-underline");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 0.1);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos ++; 
+      elem.style.width = pos + "%";  
+    }
+  }
+}
+    
+function aboutUnderlineOffHover() {
+    document.getElementById("about-link-underline").style.width = "0%";
+}
+    
+function contactUnderlineAnimation() {
+  let id = null;
+  const elem = document.getElementById("contact-link-underline");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 0.1);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos ++; 
+      elem.style.width = pos + "%";  
+    }
+  }
+}
+    
+function contactUnderlineOffHover() {
+    document.getElementById("contact-link-underline").style.width = "0%";
+}  
+
+const contentAnimationStart = setTimeout(reveal, 500);
+window.addEventListener('onload', reveal);
+    
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    
+    for(var i = 0; i < reveals.length; i++){
+        
+        var windowHeight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 10;
+        
+        if(revealtop < windowHeight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+    
+
+window.addEventListener('scroll', revealThree);
+function revealThree(){
+    var reveals = document.querySelectorAll('.revealThree');
+    
+    for(var i = 0; i < reveals.length; i++){
+        
+        var windowHeight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 100;
+        
+        if(revealtop < windowHeight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+    
+window.addEventListener('scroll', revealTwo);
+function revealTwo(){
+    var reveals = document.querySelectorAll('.revealTwo');
+    
+    for(var i = 0; i < reveals.length; i++){
+        
+        var windowHeight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 100;
+        
+        if(revealtop < windowHeight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+
+window.addEventListener('scroll', reveal);
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    
+    for(var i = 0; i < reveals.length; i++){
+        
+        var windowHeight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 100;
+        
+        if(revealtop < windowHeight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+function displayTextOne() {
+    document.getElementById("posters-link-title").style.opacity = 1;
+    document.getElementById("posters-img").style.opacity = 0.6;
+}
+    
+function hideTextOne() {
+    document.getElementById("posters-link-title").style.opacity = 0;
+    document.getElementById("posters-img").style.opacity = 1;
+}
+    
+function displayTextTwo() {
+    document.getElementById("logos-link-title").style.opacity = 1;
+    document.getElementById("logos-img").style.opacity = 0.6;
+}
+    
+function hideTextTwo() {
+    document.getElementById("logos-link-title").style.opacity = 0;
+    document.getElementById("logos-img").style.opacity = 1;
+}
+    
+function displayTextThree() {
+    document.getElementById("dolydd-gobaith-graphics-link-title").style.opacity = 1;
+    document.getElementById("dolydd-img").style.opacity = 0.6;
+}
+    
+function hideTextThree() {
+    document.getElementById("dolydd-gobaith-graphics-link-title").style.opacity = 0;
+    document.getElementById("dolydd-img").style.opacity = 1;
+}
+
+function facebookWindow() {
+    window.open("https://www.facebook.com/pagesbyben");
+}
+
+function openDolydd() {
+    window.open("https://www.dolydd-gobaith.cymru/");
+}
+
+function openMenu() {
+    document.getElementById("menu-modal").style.width = "60%";
+    document.getElementById("body").style.overflow = "hidden";
+        const showMenuLinks = setTimeout(showMenu, 1000);
+            function showMenu() {
+                document.getElementById("menu-websites").style.opacity = 1;
+                document.getElementById("menu-graphics").style.opacity = 1;
+                document.getElementById("menu-about").style.opacity = 1;
+                document.getElementById("menu-contact").style.opacity = 1;
+                document.getElementById("close-menu").style.opacity = 1;
+            }
+}
+    
+function websitesHighlight() {
+    document.getElementById("menu-websites").style.backgroundColor = "#ff3700";
+}
+function graphicsHighlight() {
+    document.getElementById("menu-graphics").style.backgroundColor = "#ff3700";
+}
+function aboutHighlight() {
+    document.getElementById("menu-about").style.backgroundColor = "#ff3700";
+}
+function contactHighlight() {
+    document.getElementById("menu-contact").style.backgroundColor = "#ff3700";
+}
+
+function closeMenu() {
+    document.getElementById("menu-modal").style.width = "0%";
+    document.getElementById("menu-websites").style.opacity = 0;
+    document.getElementById("menu-graphics").style.opacity = 0;
+    document.getElementById("menu-about").style.opacity = 0;
+    document.getElementById("menu-contact").style.opacity = 0;
+    document.getElementById("close-menu").style.opacity = 0;
+    document.getElementById("body").style.overflow = "scroll";
+}
+
+</script>
+</body>
+</html>
